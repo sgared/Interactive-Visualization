@@ -26,7 +26,7 @@ var xAttribute = "Study_Hours_Per_Day"; // Default attribute for the X-axis
 var yAttribute = "GPA"; // Default attribute for the Y-axis
 
 // Load the CSV data file
-d3.csv("Data/student_lifestyle_dataset.csv", function (error, data) {
+d3.csv("student_lifestyle_dataset.csv", function (error, data) {
     if (error) {
         console.error("Error loading data:", error); // Log error if data loading fails
         return;
