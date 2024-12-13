@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Lifestyle</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Interactive Scatter-Plot About Students Lifestyle</h1>
+
+      <div class="dropdown">
+        <label for="x-axis">X-Axis:</label>
+        <select id="x-axis"></select>
+
+        <label for="y-axis" style="margin-left: 20px">Y-Axis:</label>
+        <select id="y-axis"></select>
+      </div>
+
+      <!-- Layout container for the chart and text -->
+      <div id="layout-container">
+        <!-- Chart container -->
+        <div id="chart"></div>
+
+        <!-- Scrollable text container -->
+        <div id="scrollable-text">
+          <p>
+            Welcome to the Interactive Scatterplot Visualization. This site
+            enables you to explore relationships between different lifestyle
+            attributes, such as study hours, extracurricular activities, sleep
+            hours, and GPA. Use the dropdown menus above the chart to select
+            variables for the X and Y axes.
+          </p>
+          <p>
+            The scatterplot dynamically updates based on your selections,
+            allowing you to observe patterns and correlations in the dataset.
+            Hover over points on the scatterplot to view detailed information
+            about each data point. Gridlines are included for better
+            readability.
+          </p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

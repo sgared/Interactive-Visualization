@@ -1,0 +1,72 @@
+/* Layout container to hold the chart and scrollable text side-by-side */
+#layout-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between chart and text */
+    align-items: flex-start; /* Align items at the top */
+    width: 100%; /* Full width of the parent container */
+    max-width: 1200px; /* Limit maximum width for better layout */
+    margin: 20px auto; /* Center the layout horizontally */
+}
+
+/* Chart container styling */
+#chart {
+    width: 69%; /* Chart takes up 65% of the layout container */
+    height: 500px; /* Fixed height for the chart */
+    padding:100px 10px 20px 20px;
+    margin-left: 20px; /* Slight margin from the left edge */
+    border: 1px solid #ccc; /* Light border around the chart */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Scrollable text container styling */
+#scrollable-text {
+    width: 30%; /* Text container takes up 30% of the layout container */
+    max-height: 500px; /* Match the height of the chart */
+    padding: 10px 15px; /* Padding inside the box */
+    border: 1px solid #ccc; /* Light border around the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f5f5f5; /* Light background for contrast */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    font-size: 14px; /* Readable text size */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Line spacing for readability */
+}
+
+/* Align dropdowns */
+.dropdown {
+    width: 100%; /* Match the width of the chart section */
+    display: flex;
+    justify-content: center; /* Center align dropdowns */
+    margin-bottom: 20px;
+    gap: 15px; /* Space between dropdowns */
+}
+
+/* Dropdown elements */
+label {
+    font-weight: bold;
+}
+
+
+select {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+}
+
+/* Header styling */
+h1 {
+    margin:10px;
+    padding:10px;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
